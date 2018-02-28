@@ -17,4 +17,7 @@ keyword_counter
 ## Screenshots
 
 ### OSX
-![alt text](https://raw.githubusercontent.com/bohdanbobrowski/keyword-counter/master/screenshot_osx.png)
+![Screenshot - OSX](https://raw.githubusercontent.com/bohdanbobrowski/keyword-counter/master/screenshot_osx.png)
+
+### Linux Mint (Cinnamon)
+![Screenshot - Linux Mint](https://raw.githubusercontent.com/bohdanbobrowski/keyword-counter/master/screenshot_linux.png)
