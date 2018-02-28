@@ -1,0 +1,3 @@
+[gui_scripts]
+keyword_counter = keyword_counter.keyword_counter:main
+
