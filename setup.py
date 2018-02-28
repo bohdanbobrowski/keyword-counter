@@ -12,7 +12,7 @@ setup(
     author="Bohdan Bobrowski",
     author_email="bohdanbobrowski@gmail.com",
     license="MIT",
-    packages=["keyword_counter", "keyword_counter_lib"],
+    packages=["keyword_counter"],
     install_requires=["PyQt5", "pycurl", "validators", "lxml"],
     entry_points={
         'gui_scripts': [

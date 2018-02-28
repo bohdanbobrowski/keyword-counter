@@ -2,7 +2,10 @@
 
 ## Requirements
 * Python 3
+*
+* setuptools
 * PyQt5
+* 
 
 ## Installation
 ```git clone git@github.com:bohdanbobrowski/keyword-counter.git

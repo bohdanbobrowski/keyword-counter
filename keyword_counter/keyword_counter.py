@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import (QApplication)
-from keyword_counter_lib.keyword_counter_window import KeywordCounterWindow
+from keyword_counter.keyword_counter_window import KeywordCounterWindow
 import sys
 
 
