@@ -44,19 +44,21 @@ class KeywordCounterCrawler:
             result = keywords[0].get("content")
             result = result.split(',')
             for key, word in enumerate(result):
-                result[key] = word.strip()
+                word = word.strip()
+                if word:
+                    result[key] = word
         return result
 
     def calculate_data(self):
         result = []
         body_content = self.tree.xpath("//body")
         if len(body_content) > 0:
-            body_content = str(etree.tostring(body_content[0]))
+            body_content = str(etree.tostring(body_content[0])).lower()
             stripper = KeywordCounterStripper()
             stripper.feed(body_content)
             body_content = stripper.get_data()
             for keyword in self.keywords:
-                result.append([keyword, str(body_content.count(keyword))])
+                result.append([keyword, int(body_content.count(keyword.lower()))])
         return result
 
     def analyse(self):
@@ -77,7 +79,10 @@ class KeywordCounterCrawler:
         if validators.url(self.url):
             buffer = BytesIO()
             self.curl.setopt(self.curl.WRITEDATA, buffer)
-            self.curl.perform()
+            try:
+                self.curl.perform()
+            except:
+                return False
             result = buffer.getvalue()
             encoding = self.get_encoding(result)
             try:
