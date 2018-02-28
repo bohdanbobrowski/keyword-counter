@@ -1,4 +1,3 @@
-import sys
 from PyQt5.QtWidgets import (QDialog, QGroupBox, QHBoxLayout, QLineEdit, QPushButton, QVBoxLayout, QTableView,
                              QMessageBox)
 from PyQt5.QtGui import (QStandardItem, QStandardItemModel)
