@@ -1,3 +1,4 @@
+import sys
 import pycurl
 import validators
 from io import BytesIO

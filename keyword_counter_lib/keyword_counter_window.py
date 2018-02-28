@@ -1,7 +1,8 @@
+import sys
 from PyQt5.QtWidgets import (QDialog, QGroupBox, QHBoxLayout, QLineEdit, QPushButton, QVBoxLayout, QTableView,
                              QMessageBox)
 from PyQt5.QtGui import (QStandardItem, QStandardItemModel)
-from classes.keyword_counter_crawler import KeywordCounterCrawler
+from keyword_counter_lib.keyword_counter_crawler import KeywordCounterCrawler
 
 
 class KeywordCounterWindow(QDialog):
