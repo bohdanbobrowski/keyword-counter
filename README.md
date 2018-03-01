@@ -19,3 +19,6 @@ keyword_counter
 
 ### Linux Mint (Cinnamon)
 ![Screenshot - Linux Mint](https://raw.githubusercontent.com/bohdanbobrowski/keyword-counter/master/screenshot_linux.png)
+
+### Windows
+![Screenshot - Windows](https://raw.githubusercontent.com/bohdanbobrowski/keyword-counter/master/screenshot_windows.png)
